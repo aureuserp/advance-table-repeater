@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" role="img" aria-label="Advance Table Repeater — Filament v5 plugin banner">
+    <title>Advance Table Repeater — Filament v5 plugin</title>
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f8fafc"/>
+            <stop offset="1" stop-color="#ecfeff"/>
+        </linearGradient>
+        <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#f1f5f9"/>
+        </linearGradient>
+        <filter id="shadow" x="-5%" y="-10%" width="110%" height="130%">
+            <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <rect width="1280" height="320" fill="url(#bg)"/>
+    <circle cx="1200" cy="80" r="160" fill="#06b6d4" opacity="0.08"/>
+    <circle cx="1060" cy="40" r="90" fill="#3b82f6" opacity="0.06"/>
+
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+        <text x="80" y="108" font-size="48" font-weight="800" fill="#0f172a" letter-spacing="-1.5">Advance Table Repeater</text>
+        <text x="80" y="144" font-size="18" font-weight="500" fill="#475569">Table-view repeater with column manager</text>
+        <text x="80" y="170" font-size="18" font-weight="500" fill="#475569">and per-column summarizers</text>
+        <text x="80" y="200" font-size="13" font-weight="500" fill="#64748b" letter-spacing="0.3">Drag-drop · resizable · sum / count / avg / range · session-persisted</text>
+    </g>
+
+    <!-- Mock table card -->
+    <g transform="translate(700, 40)" filter="url(#shadow)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+        <rect x="0" y="0" width="500" height="240" rx="12" fill="url(#card)" stroke="#e2e8f0" stroke-width="1"/>
+
+        <!-- Header row -->
+        <rect x="0" y="0" width="500" height="30" rx="12" fill="#f8fafc"/>
+        <rect x="0" y="18" width="500" height="12" fill="#f8fafc"/>
+        <line x1="0" y1="30" x2="500" y2="30" stroke="#e2e8f0"/>
+        <text x="16" y="20" font-size="11" font-weight="700" fill="#475569">PRODUCT</text>
+        <text x="200" y="20" font-size="11" font-weight="700" fill="#475569">QTY</text>
+        <text x="260" y="20" font-size="11" font-weight="700" fill="#475569">PRICE</text>
+        <text x="340" y="20" font-size="11" font-weight="700" fill="#475569">TAX</text>
+        <text x="400" y="20" font-size="11" font-weight="700" fill="#475569">TOTAL</text>
+
+        <!-- Rows -->
+        <g font-size="12" fill="#0f172a">
+            <g transform="translate(0, 30)">
+                <rect x="0" y="0" width="500" height="32" fill="#ffffff"/>
+                <line x1="0" y1="32" x2="500" y2="32" stroke="#f1f5f9"/>
+                <text x="16" y="20">Office Chair</text><text x="200" y="20">2</text><text x="260" y="20">$149</text><text x="340" y="20">18%</text><text x="400" y="20" font-weight="600">$351.82</text>
+            </g>
+            <g transform="translate(0, 62)">
+                <rect x="0" y="0" width="500" height="32" fill="#f8fafc"/>
+                <line x1="0" y1="32" x2="500" y2="32" stroke="#f1f5f9"/>
+                <text x="16" y="20">Desk Lamp</text><text x="200" y="20">5</text><text x="260" y="20">$39</text><text x="340" y="20">18%</text><text x="400" y="20" font-weight="600">$230.10</text>
+            </g>
+            <g transform="translate(0, 94)">
+                <rect x="0" y="0" width="500" height="32" fill="#ffffff"/>
+                <line x1="0" y1="32" x2="500" y2="32" stroke="#f1f5f9"/>
+                <text x="16" y="20">Monitor Arm</text><text x="200" y="20">1</text><text x="260" y="20">$89</text><text x="340" y="20">18%</text><text x="400" y="20" font-weight="600">$105.02</text>
+            </g>
+            <g transform="translate(0, 126)">
+                <rect x="0" y="0" width="500" height="32" fill="#f8fafc"/>
+                <line x1="0" y1="32" x2="500" y2="32" stroke="#f1f5f9"/>
+                <text x="16" y="20">Notebook</text><text x="200" y="20">10</text><text x="260" y="20">$12</text><text x="340" y="20">18%</text><text x="400" y="20" font-weight="600">$141.60</text>
+            </g>
+        </g>
+
+        <!-- Footer / Summarizer -->
+        <rect x="0" y="158" width="500" height="36" fill="#0f172a" rx="0"/>
+        <text x="16" y="181" font-size="11" font-weight="700" fill="#cbd5e1">TOTAL</text>
+        <text x="200" y="181" font-size="11" font-weight="700" fill="#cbd5e1">18</text>
+        <text x="340" y="181" font-size="11" font-weight="700" fill="#cbd5e1">Σ</text>
+        <text x="400" y="181" font-size="13" font-weight="700" fill="#ffffff">$828.54</text>
+
+        <!-- Action row -->
+        <g transform="translate(0, 202)" font-size="11" font-weight="600">
+            <rect x="12" y="0" width="70" height="28" rx="6" fill="#06b6d4"/>
+            <text x="47" y="18" fill="#ffffff" text-anchor="middle">+ ADD</text>
+            <rect x="90" y="0" width="96" height="28" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+            <text x="138" y="18" fill="#475569" text-anchor="middle">Columns ▾</text>
+        </g>
+    </g>
+
+    <!-- Package ribbon -->
+    <g transform="translate(80, 226)" font-family="'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', monospace">
+        <rect x="0" y="0" width="290" height="32" rx="16" fill="#0f172a" opacity="0.9"/>
+        <text x="16" y="21" font-size="13" font-weight="600" fill="#ffffff">aureuserp/advance-table-repeater</text>
+    </g>
+
+    <!-- Feature chips -->
+    <g transform="translate(80, 270)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600">
+        <rect x="0" y="0" width="76" height="20" rx="10" fill="#dbeafe"/>
+        <text x="38" y="14" text-anchor="middle" fill="#1e40af">Repeater</text>
+        <rect x="82" y="0" width="96" height="20" rx="10" fill="#d1fae5"/>
+        <text x="130" y="14" text-anchor="middle" fill="#065f46">RepeatableEntry</text>
+        <rect x="184" y="0" width="80" height="20" rx="10" fill="#ffedd5"/>
+        <text x="224" y="14" text-anchor="middle" fill="#7c2d12">Summarizers</text>
+        <rect x="270" y="0" width="110" height="20" rx="10" fill="#ede9fe"/>
+        <text x="325" y="14" text-anchor="middle" fill="#5b21b6">Column manager</text>
+    </g>
+</svg>
