@@ -1,5 +1,6 @@
 # Table Repeater for Filament v5
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/aureuserp/advance-table-repeater.svg?style=flat-square)](https://packagist.org/packages/aureuserp/advance-table-repeater)
 [![License](https://img.shields.io/packagist/l/aureuserp/advance-table-repeater.svg?style=flat-square)](LICENSE.md)
 
 An advanced [Filament v5](https://filamentphp.com) Repeater + RepeatableEntry that renders as a **table** with a column manager, drag-and-drop reorder, resizable columns, and per-column summarizers (sum / count / average / range).
