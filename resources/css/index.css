@@ -94,6 +94,32 @@
             }
         }
 
+        & > tfoot {
+            @apply block whitespace-nowrap border-t border-gray-200 bg-gray-50 rounded-b-xl dark:border-white/10 dark:bg-white/5;
+
+            & > tr {
+                @apply grid grid-cols-2 gap-x-6 gap-y-1 p-6;
+
+                & > td {
+                    @apply text-sm font-semibold text-gray-950 dark:text-white;
+
+                    &.fi-align-start,
+                    &.fi-align-left {
+                        @apply text-start;
+                    }
+
+                    &.fi-align-end,
+                    &.fi-align-right {
+                        @apply text-end;
+                    }
+
+                    &.fi-hidden {
+                        @apply hidden;
+                    }
+                }
+            }
+        }
+
         & .fi-fo-table-repeater-header-required-mark {
             @apply font-medium text-red-600 dark:text-red-400;
         }
@@ -111,6 +137,18 @@
 
             & > thead {
                 @apply @xl:table-header-group;
+            }
+
+            & > tfoot {
+                @apply @xl:table-footer-group @xl:border-0 @xl:bg-transparent @xl:rounded-none;
+
+                & > tr {
+                    @apply @xl:table-row @xl:p-0;
+
+                    & > td {
+                        @apply @xl:table-cell @xl:border-t @xl:border-gray-200 @xl:bg-gray-50 @xl:px-3 @xl:py-2 @xl:first-of-type:rounded-bl-xl @xl:last-of-type:rounded-br-xl @xl:dark:border-white/10 @xl:dark:bg-white/5 @xl:[&:not(:first-of-type)]:border-s @xl:[&:not(:last-of-type)]:border-e;
+                    }
+                }
             }
 
             & > tbody {
@@ -176,6 +214,18 @@
 
             & > thead {
                 @apply lg:table-header-group;
+            }
+
+            & > tfoot {
+                @apply lg:table-footer-group lg:border-0 lg:bg-transparent lg:rounded-none;
+
+                & > tr {
+                    @apply lg:table-row lg:p-0;
+
+                    & > td {
+                        @apply lg:table-cell lg:border-t lg:border-gray-200 lg:bg-gray-50 lg:px-3 lg:py-2 lg:first-of-type:rounded-bl-xl lg:last-of-type:rounded-br-xl lg:dark:border-white/10 lg:dark:bg-white/5 lg:[&:not(:first-of-type)]:border-s lg:[&:not(:last-of-type)]:border-e;
+                    }
+                }
             }
 
             & > tbody {
